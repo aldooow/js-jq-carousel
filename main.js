@@ -23,16 +23,16 @@ $('.prev').click(function(){
       --> Far apparire la 'First' IMG,
       --> Colorare il 'First' NAV blue.*/
 function immagineProssima(){
-  if($('img.active').hasClass('last')) {
-      $('img.active').removeClass('active')
-      $('img.first').addClass('active')
+  if($('.images img.active').hasClass('last')) {
+      $('.images img.active').removeClass('active')
+      $('.images img.first').addClass('active')
 
-      $('i.active').removeClass('active')
-      $('i.first').addClass('active')
+      $('.nav i.active').removeClass('active')
+      $('.nav i.first').addClass('active')
 
   } else {
     $('img.active').removeClass('active').next('img').addClass('active');
-    $('i.active').removeClass('active').next('i').addClass('active');
+    $('.nav i.active').removeClass('active').next('i').addClass('active');
   }
 }
 
@@ -47,15 +47,15 @@ function immagineProssima(){
       --> Colorare il 'Last' NAV blue.*/
 
 function immaginePrecedente() {
-  if($('img.active').hasClass('first')) {
-      $('img.active').removeClass('active')
-      $('img.last').addClass('active')
+  if($('.images img.active').hasClass('first')) {
+      $('.images img.active').removeClass('active')
+      $('.images img.last').addClass('active')
 
-      $('i.active').removeClass('active')
-      $('i.last').addClass('active')
+      $('.nav i.active').removeClass('active')
+      $('.nav i.last').addClass('active')
 
   } else {
-    $('img.active').removeClass('active').prev('img').addClass('active');
-    $('i.active').removeClass('active').prev('i').addClass('active');
+    $('.images img.active').removeClass('active').prev('img').addClass('active');
+    $('.nav i.active').removeClass('active').prev('i').addClass('active');
   }
 }
