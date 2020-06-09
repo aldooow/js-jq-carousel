@@ -3,12 +3,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato';
+
 }
 .container {
     display: flex;
     margin: 0 auto;
     width: 70%;
     height: 100vh;
+    background: lightgreen;
+    padding: 0 50px;
 }
 .slider-wrapper {
     position: relative;
@@ -19,15 +22,20 @@
 .slider-wrapper .images {
     height: 100%;
     text-align: center;
+
 }
 .slider-wrapper .images img {
     display: none;
     height: 100%;
+    width: 80%;
+    border: 5px solid black;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 .slider-wrapper .images img.active {
     display: inline-block;
 }
 .prev, .next {
+    font-size: 50px;
     position: absolute;
     color: #565a5c;
     top: 50%;
